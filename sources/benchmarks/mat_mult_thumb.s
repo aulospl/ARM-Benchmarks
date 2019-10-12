@@ -55,14 +55,15 @@ thumb_func:
 				ldr r6, [r2, +r3]
 				
 				@ load element i, j from matrix C
-				ldr r3, [r6, +r4]
+				ldr r1, [r6, +r4] @ was r3
 
 				@ multiply A[i][k] with B[k][j] and add to C[i][j]
 				mul r7, r7, r0
 				add r1, r1, r7
 				str r1, [r6, +r4]
 
-				pop {r0, r1}
+				pop {r1}
+				pop {r0}
 
 				add r5, #4
 				push {r3}

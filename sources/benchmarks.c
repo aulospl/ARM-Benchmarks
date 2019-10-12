@@ -17,15 +17,15 @@ extern void mat_mult_thumb(int **a, int **b, int **c);
 int **allocate_matrix();
 void free_matrix(int **m);
 void init_matrices(int **a, int **b, int **c);
-
+void check_result(int **a, int **b, int **c);
 
 int main() {
 
 	// utility variables
-	int i, j, k;
+//	int i, j, k;
 	
 	// set random number generator seed
-	srand(4242);
+//	srand(4242);
 	
 	// Matrices initialization
 	int **a, **b, **c;
@@ -49,35 +49,11 @@ int main() {
 	//usb_synch(argv[1], 'b'); //begin
 	//mat_mult_arm(a, b, c);
 	
-
-	// Check is calculation is correct
-	/*
-	printf("ARM - END - VERIFY\n");
-	int f = 0, r;;
-	for(i=0;i<1000;i++){
-		for(j=0;j<1000;j++){
-			r = 0;
-			for(k=0;k<1000;k++){
-					r = r + (a[i][k] * b[k][j]);
-			}
-			if(r != c[i][j]){
-				printf("BUGOU i:%d j:%d c:%d r:%d\n", i, j, c[i][j], r);
-				f = 1;
-				break;
-			}
-		}
-		if(f == 1){
-			break;
-		}
-	}
-	*/
-	
-
 	//usb_synch(argv[1], 's'); //stop
 	printf("THUMB MATRIX MULTIPLICATION\n");
-	init_matrices(a, b, c);
+	init_matrices(NULL, NULL, c);
 	mat_mult_thumb(a, b, c);
-
+	check_result(a, b, c);
 	printf("DONE\n");
 
 	//printf("THUMB MATRIX MULTIPLICATION\n");
@@ -109,12 +85,38 @@ void free_matrix(int **m){
 
 /* Initialize matrices A and B with random values and matrix C with zeroes */
 void init_matrices(int **a, int **b, int **c){
+	srand(4242);
 	for(int i=0;i<1000;i++){
 		for(int j=0;j<1000;j++){
-			a[i][j] = rand();
-			b[i][j] = rand();
+			if(a != NULL && b != NULL){
+				a[i][j] = rand();
+				b[i][j] = rand();
+			}
 			c[i][j] = 0;
 		}
 	}
 }
 
+// Check is calculation is correct
+void check_result(int **a, int **b, int **c){
+	int i, j, k, f = 0, r;;
+	for(i=0;i<1000;i++){
+		for(j=0;j<1000;j++){
+			r = 0;
+			for(k=0;k<1000;k++){
+					r = r + (a[i][k] * b[k][j]);
+			}
+			if(r != c[i][j]){
+				printf("BUGOU i:%d j:%d c:%d r:%d\n", i, j, c[i][j], r);
+				f = 1;
+				break;
+			}
+		}
+		if(f == 1){
+			break;
+		}
+	}
+	if (f == 0){
+		printf("CORRETO\n");
+	}
+}
