@@ -18,6 +18,7 @@ int **allocate_matrix();
 void free_matrix(int **m);
 void init_matrices(int **a, int **b, int **c);
 void check_result(int **a, int **b, int **c);
+void init_cache_array(int* cache);
 
 int main() {
 
@@ -33,28 +34,22 @@ int main() {
 	b = allocate_matrix();
 	c = allocate_matrix();
 
-	// Cache test array initialization
-	// Check cache_array size to make certain it is bigger than L2 cache
-//	int *cache_array;
-//	cache_array = (int*)malloc(500000*sizeof(int));
-//	for(i=0;i<500000;i++){
-//		cache_array[i] = i;
-//	}
+	int *cache;
 	
 	/* Run benchmarks */
 	
 	//usb_synch('n');
-	printf("ARM MATRIX MULTIPLICATION\n");
-	init_matrices(a, b, c);
+	//printf("ARM MATRIX MULTIPLICATION\n");
+	//init_matrices(a, b, c);
 	//usb_synch(argv[1], 'b'); //begin
 	//mat_mult_arm(a, b, c);
 	
 	//usb_synch(argv[1], 's'); //stop
-	printf("THUMB MATRIX MULTIPLICATION\n");
-	init_matrices(NULL, NULL, c);
-	mat_mult_thumb(a, b, c);
-	check_result(a, b, c);
-	printf("DONE\n");
+	//printf("THUMB MATRIX MULTIPLICATION\n");
+	//init_matrices(NULL, NULL, c);
+	//mat_mult_thumb(a, b, c);
+	//check_result(a, b, c);
+	//printf("DONE\n");
 
 	//printf("THUMB MATRIX MULTIPLICATION\n");
 	//usb_synch(argv[1], 'b'); //begin
@@ -62,6 +57,17 @@ int main() {
 	//usb_synch(argv[1], 's'); //stop
 	//printf("DONE"\n);
 	//usb_synch('e');
+	
+	// Free matrix memory
+	// free_matrix(a);
+	// free_matrix(b);
+	// free_matrix(c);
+	
+	/* Memory access (cacheless) */
+	init_cache_array(cache);
+	char ch;
+	scanf("%c", &ch);
+	free(cache);
 	return 0;
 }
 
@@ -82,7 +88,18 @@ void free_matrix(int **m){
 	}
 	free(m);
 }
-
+// Cache test array initialization
+// Check cache_array size to make certain it is bigger than L2 cache
+void init_cache_array(int *cache){
+	cache = (int*)malloc(209715200*sizeof(int));
+	if(cache == NULL){
+		printf("failure to allocate array\n");
+		exit(1);
+	}
+	for(int i=0;i<209715200;i++){
+		cache[i] = i;
+	}
+}
 /* Initialize matrices A and B with random values and matrix C with zeroes */
 void init_matrices(int **a, int **b, int **c){
 	srand(4242);
