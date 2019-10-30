@@ -13,28 +13,24 @@
 /* extern assembly functions to bench */
 extern void mat_mult_arm(int **a, int **b, int **c); 
 extern void mat_mult_thumb(int **a, int **b, int **c);
+extern void mem_access_arm(int *cache);
 
 int **allocate_matrix();
 void free_matrix(int **m);
 void init_matrices(int **a, int **b, int **c);
 void check_result(int **a, int **b, int **c);
-void init_cache_array(int* cache);
+int* init_cache_array();
 
 int main() {
 
-	// utility variables
-//	int i, j, k;
-	
-	// set random number generator seed
-//	srand(4242);
-	
 	// Matrices initialization
 	int **a, **b, **c;
 	a = allocate_matrix();
 	b = allocate_matrix();
 	c = allocate_matrix();
-
-	int *cache;
+	
+	// Memory array initialization
+	int *cache = NULL;
 	
 	/* Run benchmarks */
 	
@@ -64,10 +60,13 @@ int main() {
 	// free_matrix(c);
 	
 	/* Memory access (cacheless) */
-	init_cache_array(cache);
-	char ch;
-	scanf("%c", &ch);
+	cache = init_cache_array();
+	mem_access_arm(cache);
+	printf("THUMB MEMORY ACCESS\n");
+	
 	free(cache);
+	
+	
 	return 0;
 }
 
@@ -90,15 +89,16 @@ void free_matrix(int **m){
 }
 // Cache test array initialization
 // Check cache_array size to make certain it is bigger than L2 cache
-void init_cache_array(int *cache){
-	cache = (int*)malloc(209715200*sizeof(int));
+int* init_cache_array(){
+	int* cache = (int*)malloc(262144*sizeof(int));
 	if(cache == NULL){
 		printf("failure to allocate array\n");
 		exit(1);
 	}
-	for(int i=0;i<209715200;i++){
-		cache[i] = i;
+	for(int i=0;i<262144;i++){
+		cache[i] = i+1;
 	}
+	return cache;
 }
 /* Initialize matrices A and B with random values and matrix C with zeroes */
 void init_matrices(int **a, int **b, int **c){
