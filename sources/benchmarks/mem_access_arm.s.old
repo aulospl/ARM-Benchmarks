@@ -8,7 +8,7 @@
 
 .data
 .balign 4
-array_size: .word 65535
+array_size: .word 262144
 .balign 4
 tmp: .word 0
 
@@ -16,34 +16,27 @@ tmp: .word 0
 .balign 4
 mem_access_arm:
 	.fnstart
-	@ r0 = array,
-	push {r1, r2, r3, r4, r5, r6, r7, lr}
+	@ r0 = cache, r4 = tmp, r5 = max, r6 = index, r7 = tmp_var
+	push {r4, r5, r6, r7, lr}
 	
-	ldr r1, array_size_address
-	ldr r1, [r1]
-	
-	mov r2, #4
-	mov r3, #0
-	
-	outer_loop:
-		mov r4, #0
-		inner_loop:
-			
-			@ do stuff here
-			@ ya know... code stuff
-			@ just code
+	ldr r7, tmp_addr
 
-			add r4, #1
-			cmp r1, r4 
-			blt inner_loop
-		
-		add r3, #1
-		cmp r2, r3 
-		blt outer_loop
+	ldr r5, array_size_address	
+	ldr r5, [r5]
 	
+	ldr r4, [r0]
 
+	mov r6, #0
+	
+	loop:
+	ldr r4, [r0, +r6]
+	str r4, [r7]
 
-	pop {r1, r2, r3, r4, r5, r6, r7, lr}
+	add r6, #4
+	cmp r6, r5
+	ble loop 
+
+	pop {r4, r5, r6, r7, lr}
 	bx lr
 	.fnend
 

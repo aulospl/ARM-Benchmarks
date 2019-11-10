@@ -14,12 +14,14 @@
 extern void mat_mult_arm(int **a, int **b, int **c); 
 extern void mat_mult_thumb(int **a, int **b, int **c);
 extern void mem_access_arm(int *cache);
+extern void mem_access_thumb(int *cache);
 
 int **allocate_matrix();
 void free_matrix(int **m);
 void init_matrices(int **a, int **b, int **c);
 void check_result(int **a, int **b, int **c);
-int* init_cache_array();
+int **alloc_array();
+void init_array(int **array);
 
 int main() {
 
@@ -30,8 +32,9 @@ int main() {
 	c = allocate_matrix();
 	
 	// Memory array initialization
-	int *cache = NULL;
-	
+	int **array = NULL;
+	array = alloc_array();
+
 	/* Run benchmarks */
 	
 	//usb_synch('n');
@@ -59,13 +62,15 @@ int main() {
 	// free_matrix(b);
 	// free_matrix(c);
 	
-	/* Memory access (cacheless) */
-	cache = init_cache_array();
-	mem_access_arm(cache);
-	printf("THUMB MEMORY ACCESS\n");
+	/* Memory access (cacheless) */	
+	printf("ARM MEMORY ACCESS\n");	
+	init_array(array);
+	mem_access_arm(array);
 	
-	free(cache);
-	
+	//printf("THUMB MEMORY ACCESS\n");
+	//init_cache(cache);
+	//mem_access_thumb(cache);
+
 	
 	return 0;
 }
@@ -89,16 +94,30 @@ void free_matrix(int **m){
 }
 // Cache test array initialization
 // Check cache_array size to make certain it is bigger than L2 cache
-int* init_cache_array(){
-	int* cache = (int*)malloc(262144*sizeof(int));
-	if(cache == NULL){
-		printf("failure to allocate array\n");
+int** alloc_array(){
+	int i;
+	int **array = (int**)malloc(4*sizeof(int*));
+	if(array == NULL){
+		printf("failure to allocate outer array\n");
 		exit(1);
 	}
-	for(int i=0;i<262144;i++){
-		cache[i] = i+1;
+	//262144
+	for(i=0;i<4;i++){
+		array[i] = (int*)malloc(65536*sizeof(int));
+		if(array[i] == NULL){
+			printf("failure to allocate inner array\n");
+			exit(1);
+		}
 	}
-	return cache;
+	return array;
+}
+
+void init_array(int **array){
+	for(int i=0;i<4;i++){
+		for(int j=0;j<65536;j++){
+			array[i][j]=j;
+		}
+	}
 }
 /* Initialize matrices A and B with random values and matrix C with zeroes */
 void init_matrices(int **a, int **b, int **c){
