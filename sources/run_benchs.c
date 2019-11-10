@@ -13,8 +13,8 @@
 /* extern assembly functions to bench */
 extern void mat_mult_arm(int **a, int **b, int **c); 
 extern void mat_mult_thumb(int **a, int **b, int **c);
-extern void mem_access_arm(int *cache);
-extern void mem_access_thumb(int *cache);
+extern void mem_access_arm(int **cache);
+extern void mem_access_thumb(int **cache);
 
 int **allocate_matrix();
 void free_matrix(int **m);
@@ -26,11 +26,11 @@ void init_array(int **array);
 int main() {
 
 	// Matrices initialization
-	int **a, **b, **c;
+/*	int **a, **b, **c;
 	a = allocate_matrix();
 	b = allocate_matrix();
 	c = allocate_matrix();
-	
+*/	
 	// Memory array initialization
 	int **array = NULL;
 	array = alloc_array();
@@ -67,9 +67,9 @@ int main() {
 	init_array(array);
 	mem_access_arm(array);
 	
-	//printf("THUMB MEMORY ACCESS\n");
-	//init_cache(cache);
-	//mem_access_thumb(cache);
+	printf("THUMB MEMORY ACCESS\n");
+	init_array(array);
+	mem_access_thumb(array);
 
 	
 	return 0;
