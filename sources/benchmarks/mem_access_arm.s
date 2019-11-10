@@ -17,33 +17,42 @@ tmp: .word 0
 mem_access_arm:
 	.fnstart
 	@ r0 = array,
-	push {r1, r2, r3, r4, r5, r6, r7, lr}
+	push {r1, r2, r3, r4, r5, r6, lr}
 	
+	@ max array size
 	ldr r1, array_size_address
 	ldr r1, [r1]
+
+	@ load addr of tmp var
+	ldr r5, tmp_addr
 	
+	@ number of arrays	
 	mov r2, #4
+
+	@ init outer counter
 	mov r3, #0
-	
+		
 	outer_loop:
+		@ init inner counter
 		mov r4, #0
 		inner_loop:
 			
-			@ do stuff here
-			@ ya know... code stuff
-			@ just code
-
+			@ read element [r4][r1] and write it into tmp
+			ldr r6, [r0, +r1]
+			str r6, [r5]
+			
+			@ increment and inner loop
 			add r4, #1
 			cmp r1, r4 
 			blt inner_loop
 		
+		@ increment and outer loop
 		add r3, #1
 		cmp r2, r3 
 		blt outer_loop
 	
 
-
-	pop {r1, r2, r3, r4, r5, r6, r7, lr}
+	pop {r1, r2, r3, r4, r5, r6, lr}
 	bx lr
 	.fnend
 
