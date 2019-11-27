@@ -63,9 +63,9 @@ int main() {
 	// free_matrix(c);
 	
 	/* Memory access (cacheless) */	
-	printf("ARM MEMORY ACCESS\n");	
-	init_array(array);
-	mem_access_arm(array);
+	//printf("ARM MEMORY ACCESS\n");
+	//init_array(array);
+	//mem_access_arm(array);
 	
 	printf("THUMB MEMORY ACCESS\n");
 	init_array(array);

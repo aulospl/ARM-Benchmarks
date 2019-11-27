@@ -5,12 +5,14 @@
 .global mem_access_arm
 .p2align 2
 .type mem_access_arm,%function
-
+.extern printf
 .data
 .balign 4
 array_size: .word 65535
 .balign 4
 tmp: .word 0
+.balign 4
+stri: .asciz " %d\n"
 
 .text
 .balign 4
@@ -32,23 +34,24 @@ mem_access_arm:
 	@ init outer counter
 	mov r3, #0
 		
+	@ init inner counter
+	mov r4, #0
+	
 	outer_loop:
-		@ init inner counter
-		mov r4, #0
 		inner_loop:
 			
 			@ read element [r4][r1] and write it into tmp
-			ldr r6, [r0, +r1]
+			ldr r6, [r0, +r4]
 			str r6, [r5]
 			
 			@ increment and inner loop
 			add r4, #1
-			cmp r1, r4 
+			cmp r4, r1 
 			blt inner_loop
 		
 		@ increment and outer loop
 		add r3, #1
-		cmp r2, r3 
+		cmp r3, r2
 		blt outer_loop
 	
 
