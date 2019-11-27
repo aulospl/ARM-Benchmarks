@@ -28,7 +28,7 @@ mem_access_thumb:
 	.fnend
 
 
-.code 32
+.code 16
 .align 2
 thumb_code:
 @	push {r1} 
@@ -45,7 +45,7 @@ thumb_code:
 	ldr r5, tmp_addr
 	
 	@ number of arrays	
-	mov r8, #4
+	mov r2, #4
 
 	@ init outer counter
 	mov r3, #0
@@ -66,7 +66,7 @@ thumb_code:
 		
 		@ increment and outer loop
 		add r3, #1
-		cmp r8, r3 
+		cmp r2, r3 
 		blt outer_loop
 	
 @	push {r1} 
@@ -79,4 +79,5 @@ thumb_code:
 
 .align 2
 tmp_addr : .word tmp
+.align 2
 array_size_address : .word array_size
