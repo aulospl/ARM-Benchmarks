@@ -1,7 +1,7 @@
 @ Access 1MB array of integers with ARM instruction set
 @ Operations: Sequential and random read and write
 @ Value of array is passed through pointer 'cache'
-@ void mem_access_arm(*cache)
+@ void mem_access_arm(**cache)
 .global mem_access_arm
 .p2align 2
 .type mem_access_arm,%function
