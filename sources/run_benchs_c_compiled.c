@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include "benchmarks/mat_mult_c.h"
+
+
 //#include "utilities/usbmeter.h"
 // library for usb-meter synching 
 /* usb power-logger commands:
@@ -11,10 +14,6 @@
  */
 
 /* extern assembly functions to bench */
-//extern void mat_mult_arm(int **a, int **b, int **c); 
-extern void mat_mult_thumb(int **a, int **b, int **c);
-//extern void mem_access_arm(int **cache);
-//extern void mem_access_thumb(int **cache);
 
 int **allocate_matrix();
 void free_matrix(int **m);
@@ -32,8 +31,8 @@ int main() {
 	c = allocate_matrix();
 	
 	// Memory array initialization
-//	int **array = NULL;
-//	array = alloc_array();
+	//int **array = NULL;
+	//array = alloc_array();
 
 	/* Run benchmarks */
 	
@@ -41,7 +40,7 @@ int main() {
 	//printf("ARM MATRIX MULTIPLICATION\n");
 	init_matrices(a, b, c);
 	//usb_synch(argv[1], 'b'); //begin
-	mat_mult_thumb(a, b, c);
+	mat_mult_c(a, b, c);
 	
 	//usb_synch(argv[1], 's'); //stop
 	//printf("THUMB MATRIX MULTIPLICATION\n");
@@ -67,7 +66,7 @@ int main() {
 	//init_array(array);
 	//mem_access_arm(array);
 	
-//	printf("THUMB MEMORY ACCESS\n");
+	//printf("THUMB MEMORY ACCESS\n");
 	//init_array(array);
 	//mem_access_thumb(array);
 
