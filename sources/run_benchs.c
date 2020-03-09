@@ -12,9 +12,9 @@
 
 /* extern assembly functions to bench */
 //extern void mat_mult_arm(int **a, int **b, int **c); 
-//extern void mat_mult_thumb(int **a, int **b, int **c);
+extern void mat_mult_thumb(int **a, int **b, int **c);
 //extern void mem_access_arm(int **cache);
-extern void mem_access_thumb(int **cache);
+//extern void mem_access_thumb(int **cache);
 
 int **allocate_matrix();
 void free_matrix(int **m);
@@ -26,14 +26,14 @@ void init_array(int **array);
 int main() {
 
 	// Matrices initialization
-	// int **a, **b, **c;
-	// a = allocate_matrix();
-	// b = allocate_matrix();
-	// c = allocate_matrix();
+	 int **a, **b, **c;
+	 a = allocate_matrix();
+	 b = allocate_matrix();
+	 c = allocate_matrix();
 	
 	// Memory array initialization
-	int **array = NULL;
-	array = alloc_array();
+	//int **array = NULL;
+	//array = alloc_array();
 
 	/* Run benchmarks */
 	
@@ -45,27 +45,27 @@ int main() {
 	
 	//usb_synch(argv[1], 's'); //stop
 	//printf("THUMB MATRIX MULTIPLICATION\n");
-	//init_matrices(NULL, NULL, c);
-	//mat_mult_thumb(a, b, c);
+	init_matrices(NULL, NULL, c);
+	//mat_mult_arm(a, b, c);
 	//check_result(a, b, c);
 	//printf("DONE\n");
 
 	//printf("THUMB MATRIX MULTIPLICATION\n");
 	//usb_synch(argv[1], 'b'); //begin
-	//mat_mult_thumb(a, b);
+	mat_mult_thumb(a, b, c);
 	//usb_synch(argv[1], 's'); //stop
 	//printf("DONE"\n);
 	//usb_synch('e');
 	
 	// Free matrix memory
-	//free_matrix(a);
-	//free_matrix(b);
-	//free_matrix(c);
+	free_matrix(a);
+	free_matrix(b);
+	free_matrix(c);
 	
 	/* Memory access (cacheless) */	
 	//printf("ARM MEMORY ACCESS\n");
-	init_array(array);
-	mem_access_thumb(array);
+	//init_array(array);
+	//mem_access_thumb(array);
 	
 //	printf("THUMB MEMORY ACCESS\n");
 	//init_array(array);
