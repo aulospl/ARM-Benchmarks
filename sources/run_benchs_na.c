@@ -1,9 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include "c_code/mat_mult_c.h"
-
-
 //#include "utilities/usbmeter.h"
 // library for usb-meter synching 
 /* usb power-logger commands:
@@ -14,6 +11,10 @@
  */
 
 /* extern assembly functions to bench */
+//extern void mat_mult_arm(int **a, int **b, int **c); 
+extern void mat_mult_thumb(int **a, int **b, int **c);
+//extern void mem_access_arm(int **cache);
+//extern void mem_access_thumb(int **cache);
 
 int **allocate_matrix();
 void free_matrix(int **m);
@@ -25,39 +26,53 @@ void init_array(int **array);
 int main() {
 
 	// Matrices initialization
-	int **a, **b, **c;
-	a = allocate_matrix();
-	b = allocate_matrix();
-	c = allocate_matrix();
+	 int **a, **b, **c;
+	 //a = allocate_matrix();
+	 //b = allocate_matrix();
+	 //c = allocate_matrix();
 	
+	a = (int**)malloc(1000*sizeof(int*));
+	a[0] = (int*)malloc(1000*1000*sizeof(int));
+	for(int i=1;i<1000;i++){
+		a[i] = a[i-1] + 1000;
+	}
+	
+	b = (int**)malloc(1000*sizeof(int*));
+	b[0] = (int*)malloc(1000*1000*sizeof(int));
+	for(int i=1;i<1000;i++){
+		b[i] = b[i-1] + 1000;
+	}
+	
+	c = (int**)malloc(1000*sizeof(int*));
+	c[0] = (int*)malloc(1000*1000*sizeof(int));
+	for(int i=1;i<1000;i++){
+		c[i] = c[i-1] + 1000;
+	}
+
+
+
 	// Memory array initialization
 	//int **array = NULL;
 	//array = alloc_array();
-	
-	//init_array(array);
-	//mem_access_c(array);
-	/* Run benchmarks */
-	
 
-	init_matrices(a, b, c);
-	mat_mult_c(a, b, c);
+	/* Run benchmarks */
 	
 	//usb_synch('n');
 	//printf("ARM MATRIX MULTIPLICATION\n");
-	//init_matrices(a, b, c);
+	init_matrices(a, b, c);
 	//usb_synch(argv[1], 'b'); //begin
-	//mat_mult_c(a, b, c);
+	//mat_mult_thumb(a, b, c);
 	
 	//usb_synch(argv[1], 's'); //stop
 	//printf("THUMB MATRIX MULTIPLICATION\n");
 	//init_matrices(NULL, NULL, c);
-	//mat_mult_thumb(a, b, c);
+	//mat_mult_arm(a, b, c);
 	//check_result(a, b, c);
 	//printf("DONE\n");
 
 	//printf("THUMB MATRIX MULTIPLICATION\n");
 	//usb_synch(argv[1], 'b'); //begin
-	//mat_mult_thumb(a, b);
+	mat_mult_thumb(a, b, c);
 	//usb_synch(argv[1], 's'); //stop
 	//printf("DONE"\n);
 	//usb_synch('e');
@@ -70,9 +85,9 @@ int main() {
 	/* Memory access (cacheless) */	
 	//printf("ARM MEMORY ACCESS\n");
 	//init_array(array);
-	//mem_access_arm(array);
+	//mem_access_thumb(array);
 	
-	//printf("THUMB MEMORY ACCESS\n");
+//	printf("THUMB MEMORY ACCESS\n");
 	//init_array(array);
 	//mem_access_thumb(array);
 
