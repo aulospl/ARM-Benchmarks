@@ -1,0 +1,21 @@
+9888 mat_arm_O0
+9888 mat_arm_O1
+9904 mat_arm_O2
+9904 mat_arm_O3
+9904 mat_arm_Os
+8592 mat_mult_c_arm_O0
+8592 mat_mult_c_arm_O1
+8608 mat_mult_c_arm_O2
+8608 mat_mult_c_arm_O3
+8656 mat_mult_c_arm_Os
+8596 mat_mult_c_thumb_O0
+8596 mat_mult_c_thumb_O1
+8612 mat_mult_c_thumb_O2
+8612 mat_mult_c_thumb_O3
+8660 mat_mult_c_thumb_Os
+9888 mat_thumb_O0
+9888 mat_thumb_O1
+9904 mat_thumb_O2
+9904 mat_thumb_O3
+9904 mat_thumb_Os
+
