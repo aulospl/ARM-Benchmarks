@@ -1,6 +1,6 @@
 #include "mat_mult_c.h"
 
-//__attribute__((target("thumb")))
+__attribute__((target("thumb")))
 void mat_mult_c(int **a, int **b, int **c){
 	int i, j, k;
 

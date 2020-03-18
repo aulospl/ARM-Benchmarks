@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include "c_code/mat_mult_c.h"
-
+//#include "c_code/mat_mult_c.h"
+#include "c_code/mem_access_c.h"
 
 //#include "utilities/usbmeter.h"
 // library for usb-meter synching 
@@ -25,22 +25,23 @@ void init_array(int **array);
 int main() {
 
 	// Matrices initialization
+	/*
 	int **a, **b, **c;
 	a = allocate_matrix();
 	b = allocate_matrix();
 	c = allocate_matrix();
-	
+	*/
 	// Memory array initialization
-	//int **array = NULL;
-	//array = alloc_array();
+	int **array = NULL;
+	array = alloc_array();
 	
 	//init_array(array);
-	//mem_access_c(array);
+	mem_access_c(array);
 	/* Run benchmarks */
 	
 
-	init_matrices(a, b, c);
-	mat_mult_c(a, b, c);
+	//init_matrices(a, b, c);
+	//mat_mult_c(a, b, c);
 	
 	//usb_synch('n');
 	//printf("ARM MATRIX MULTIPLICATION\n");
@@ -63,10 +64,12 @@ int main() {
 	//usb_synch('e');
 	
 	// Free matrix memory
-	free_matrix(a);
-	free_matrix(b);
-	free_matrix(c);
+	//free_matrix(a);
+	//free_matrix(b);
+	//free_matrix(c);
 	
+	free(array);
+
 	/* Memory access (cacheless) */	
 	//printf("ARM MEMORY ACCESS\n");
 	//init_array(array);
