@@ -11,8 +11,8 @@
  */
 
 /* extern assembly functions to bench */
-//extern void mat_mult_arm(int **a, int **b, int **c); 
-extern void mat_mult_thumb(int **a, int **b, int **c);
+extern void mat_mult_arm(int **a, int **b, int **c); 
+//extern void mat_mult_thumb(int **a, int **b, int **c);
 //extern void mem_access_arm(int **cache);
 //extern void mem_access_thumb(int **cache);
 
@@ -52,7 +52,7 @@ int main() {
 
 	//printf("THUMB MATRIX MULTIPLICATION\n");
 	//usb_synch(argv[1], 'b'); //begin
-	mat_mult_thumb(a, b, c);
+	mat_mult_arm(a, b, c);
 	//usb_synch(argv[1], 's'); //stop
 	//printf("DONE"\n);
 	//usb_synch('e');
