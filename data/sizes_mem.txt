@@ -1,0 +1,21 @@
+ 9076 mem_access_arm_O0
+ 9076 mem_access_arm_O1
+ 9092 mem_access_arm_O2
+ 9092 mem_access_arm_O3
+ 9092 mem_access_arm_Os
+ 8596 mem_access_c_arm_O0
+ 8596 mem_access_c_arm_O1
+ 8612 mem_access_c_arm_O2
+ 8612 mem_access_c_arm_O3
+ 8660 mem_access_c_arm_Os
+ 8600 mem_access_c_thumb_O0
+ 8600 mem_access_c_thumb_O1
+ 8616 mem_access_c_thumb_O2
+ 8616 mem_access_c_thumb_O3
+ 8664 mem_access_c_thumb_Os
+ 9116 mem_access_thumb_O0
+ 9116 mem_access_thumb_O1
+ 9132 mem_access_thumb_O2
+ 9132 mem_access_thumb_O3
+ 9132 mem_access_thumb_Os
+
