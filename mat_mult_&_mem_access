@@ -1,0 +1,18 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+\section*{Número de linhas}
+
+\section*{Tamanho do executável}
+
+\section*{Tempos de execução}
+
+\subsection*{Raw}
+
+\subsection*{Ordenado}
+
+\subsection*{Histogramas}
+
+\end{document}          
