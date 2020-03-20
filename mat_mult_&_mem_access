@@ -122,9 +122,9 @@ Foram medidos apenas o tempo de execução dos programas compilados com otimiza�
  \includegraphics[width=\linewidth]{data/time_mat_thumb.png}
 \end{figure}
 
-%\begin{figure}[H]
-% \includegraphics[width=\linewidth]{data/time_mat_c_arm.png}
-%\end{figure}
+\begin{figure}[H]
+ \includegraphics[width=\linewidth]{data/time_mat_c_arm.png}
+\end{figure}
 
 \begin{figure}[H]
  \includegraphics[width=\linewidth]{data/time_mat_c_thumb.png}
@@ -161,9 +161,9 @@ Foram medidos apenas o tempo de execução dos programas compilados com otimiza�
  \includegraphics[width=\linewidth]{data/time_mat_thumb_sorted.png}
 \end{figure}
 
-%\begin{figure}[H]
-% \includegraphics[width=\linewidth]{data/time_mat_c_arm_sorted.png}
-%\end{figure}
+\begin{figure}[H]
+ \includegraphics[width=\linewidth]{data/time_mat_c_arm_sorted.png}
+\end{figure}
 
 \begin{figure}[H]
  \includegraphics[width=\linewidth]{data/time_mat_c_thumb_sorted.png}
@@ -197,9 +197,9 @@ Foram medidos apenas o tempo de execução dos programas compilados com otimiza�
  \includegraphics[width=\linewidth]{data/time_mat_thumb_histogram.png}
 \end{figure}
 
-%\begin{figure}[H]
-% \includegraphics[width=\linewidth]{data/time_mat_c_arm_histogram.png}
-%\end{figure}
+\begin{figure}[H]
+ \includegraphics[width=\linewidth]{data/time_mat_c_arm_histogram.png}
+\end{figure}
 
 \begin{figure}[H]
  \includegraphics[width=\linewidth]{data/time_mat_c_thumb_histogram.png}

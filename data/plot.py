@@ -20,7 +20,10 @@ plt.title(sys.argv[1])
 plt.xlabel("Test")
 plt.ylabel("Time")
 plt.ylim(srt[0], srt[50])
-plt.bar(range(51), srt)
 
-plt.savefig(sys.argv[1].replace(".data", "_sorted.png"))
-
+if len(sys.argv) == 3 and sys.argv[2] == '-s':
+    plt.bar(range(51), srt)
+    plt.savefig(sys.argv[1].replace(".data", "_sorted.png"))
+elif len(sys.argv) == 2:
+    plt.bar(range(len(data[75:126])), data[75:126])
+    plt.savefig(sys.argv[1].replace(".data", ".png"))
