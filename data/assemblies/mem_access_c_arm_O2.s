@@ -1,5 +1,5 @@
 
-execs/mem_access/mem_access_c_thumb_O2:     file format elf32-littlearm
+execs/mem_access/mem_access_c_arm_O2:     file format elf32-littlearm
 
 
 Disassembly of section .init:
@@ -74,7 +74,7 @@ Disassembly of section .text:
    10434:	e92d4010 	push	{r4, lr}
    10438:	eb000069 	bl	105e4 <alloc_array>
    1043c:	e1a04000 	mov	r4, r0
-   10440:	fa0000dc 	blx	107b8 <mem_access_c>
+   10440:	eb0000dc 	bl	107b8 <mem_access_c>
    10444:	e1a00004 	mov	r0, r4
    10448:	ebffffde 	bl	103c8 <free@plt>
    1044c:	e3a00000 	mov	r0, #0
@@ -322,8 +322,7 @@ Disassembly of section .text:
    107b4:	e8bd8ff0 	pop	{r4, r5, r6, r7, r8, r9, sl, fp, pc}
 
 000107b8 <mem_access_c>:
-   107b8:	4770      	bx	lr
-   107ba:	bf00      	nop
+   107b8:	e12fff1e 	bx	lr
 
 000107bc <__libc_csu_init>:
    107bc:	e92d47f0 	push	{r4, r5, r6, r7, r8, r9, sl, lr}
