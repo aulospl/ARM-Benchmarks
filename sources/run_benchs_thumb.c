@@ -12,7 +12,7 @@
 
 /* extern assembly functions to bench */
 //extern void mat_mult_arm_long(int **a, int **b, int **c); 
-extern void mat_mult_arm_long(int **a, int **b, int **c);
+extern void mat_mult_thumb_long(int **a, int **b, int **c);
 //extern void mem_access_arm(int **cache);
 //extern void mem_access_thumb(int **cache);
 
@@ -46,9 +46,9 @@ int main() {
 	//mat_mult_thumb(a, b, c);
 	
 	//usb_synch(argv[1], 's'); //stop
-	printf("ARM  MATRIX MULTIPLICATION\n");
+	printf("THUMB  MATRIX MULTIPLICATION\n");
 	init_matrices(NULL, NULL, c);
-	mat_mult_arm_long(a, b, c);
+	mat_mult_thumb_long(a, b, c);
 	check_result(a, b, c);
 	printf("DONE\n");
 

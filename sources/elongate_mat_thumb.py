@@ -79,8 +79,15 @@ mov r3, #0
                 cmp r3, r4
                 pop {r4}
                 blt i_loop
-                    
-                    """
+        
+                mov r7, #0
+                ldr r6, addr_number
+                str r7, [r6]
+            
+                @DEBUG
+                ldr r6, [r6]
+
+"""
 
 
 print('mat_thumb')
@@ -88,7 +95,7 @@ f = open('mat_mult_thumb_long.s', 'w')
 f.write(header)
 
 
-for c in range(0, 4):
+for c in range(0, 20):
     new_func = func.replace('i_loop', 'i'+str(c)+'_loop')
     new_func = new_func.replace('j_loop', 'j'+str(c)+'_loop')
     new_func = new_func.replace('k_loop', 'k'+str(c)+'_loop')
