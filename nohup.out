@@ -1,0 +1,8 @@
+./run_perf.sh: line 3: [: -eq: unary operator expected
+./run_perf.sh: line 9: [: -eq: unary operator expected
+./run_perf.sh: line 15: [: -eq: unary operator expected
+./run_perf.sh: line 21: [: -eq: unary operator expected
+./run_perf.sh: line 3: [: -eq: unary operator expected
+./run_perf.sh: line 9: [: -eq: unary operator expected
+./run_perf.sh: line 15: [: -eq: unary operator expected
+./run_perf.sh: line 21: [: -eq: unary operator expected
