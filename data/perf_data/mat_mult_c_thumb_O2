@@ -1,0 +1,900 @@
+
+ Performance counter stats for './execs/mat_mult/mat_mult_c_thumb_O2':
+
+      43408.483982      task-clock:u (msec)       #    1.000 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+             2,982      page-faults:u             #    0.069 K/sec                  
+    38,384,400,198      cycles:u                  #    0.884 GHz                      (62.48%)
+     7,160,852,443      instructions:u            #    0.19  insn per cycle           (62.48%)
+     1,017,215,823      branches:u                #   23.434 M/sec                    (62.48%)
+         2,943,989      branch-misses:u           #    0.29% of all branches          (62.53%)
+     4,057,841,498      L1-dcache-loads:u         #   93.480 M/sec                    (62.53%)
+     1,073,807,718      L1-dcache-load-misses:u   #   26.46% of all L1-dcache hits    (50.03%)
+     2,148,026,675      LLC-loads:u               #   49.484 M/sec                    (50.02%)
+        69,277,449      LLC-load-misses:u         #    3.23% of all LL-cache hits     (49.99%)
+
+      43.420594253 seconds time elapsed
+
+
+ Performance counter stats for './execs/mat_mult/mat_mult_c_thumb_O2':
+
+      43405.667945      task-clock:u (msec)       #    1.000 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+             2,982      page-faults:u             #    0.069 K/sec                  
+    38,382,607,368      cycles:u                  #    0.884 GHz                      (62.48%)
+     7,159,804,842      instructions:u            #    0.19  insn per cycle           (62.48%)
+     1,016,607,392      branches:u                #   23.421 M/sec                    (62.52%)
+         2,985,472      branch-misses:u           #    0.29% of all branches          (62.53%)
+     4,059,169,241      L1-dcache-loads:u         #   93.517 M/sec                    (62.53%)
+     1,075,777,099      L1-dcache-load-misses:u   #   26.50% of all L1-dcache hits    (50.03%)
+     2,152,115,727      LLC-loads:u               #   49.581 M/sec                    (50.00%)
+        68,889,206      LLC-load-misses:u         #    3.20% of all LL-cache hits     (49.98%)
+
+      43.412670279 seconds time elapsed
+
+
+ Performance counter stats for './execs/mat_mult/mat_mult_c_thumb_O2':
+
+      43178.096948      task-clock:u (msec)       #    0.998 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+             2,983      page-faults:u             #    0.069 K/sec                  
+    38,336,621,015      cycles:u                  #    0.888 GHz                      (62.46%)
+     7,158,692,441      instructions:u            #    0.19  insn per cycle           (62.47%)
+     1,017,037,449      branches:u                #   23.554 M/sec                    (62.51%)
+         2,959,383      branch-misses:u           #    0.29% of all branches          (62.52%)
+     4,056,907,830      L1-dcache-loads:u         #   93.958 M/sec                    (62.57%)
+     1,073,982,139      L1-dcache-load-misses:u   #   26.47% of all L1-dcache hits    (50.03%)
+     2,149,477,332      LLC-loads:u               #   49.782 M/sec                    (50.01%)
+        68,750,184      LLC-load-misses:u         #    3.20% of all LL-cache hits     (49.96%)
+
+      43.257169732 seconds time elapsed
+
+
+ Performance counter stats for './execs/mat_mult/mat_mult_c_thumb_O2':
+
+      43017.093461      task-clock:u (msec)       #    0.999 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+             2,982      page-faults:u             #    0.069 K/sec                  
+    38,321,662,127      cycles:u                  #    0.891 GHz                      (62.49%)
+     7,156,315,485      instructions:u            #    0.19  insn per cycle           (62.49%)
+     1,017,062,202      branches:u                #   23.643 M/sec                    (62.52%)
+         2,918,075      branch-misses:u           #    0.29% of all branches          (62.52%)
+     4,061,147,494      L1-dcache-loads:u         #   94.408 M/sec                    (62.52%)
+     1,072,164,906      L1-dcache-load-misses:u   #   26.40% of all L1-dcache hits    (50.02%)
+     2,146,090,867      LLC-loads:u               #   49.889 M/sec                    (50.00%)
+        68,898,869      LLC-load-misses:u         #    3.21% of all LL-cache hits     (49.99%)
+
+      43.047721569 seconds time elapsed
+
+
+ Performance counter stats for './execs/mat_mult/mat_mult_c_thumb_O2':
+
+      43353.006014      task-clock:u (msec)       #    1.000 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+             2,981      page-faults:u             #    0.069 K/sec                  
+    38,327,693,408      cycles:u                  #    0.884 GHz                      (62.50%)
+     7,154,971,294      instructions:u            #    0.19  insn per cycle           (62.50%)
+     1,017,312,112      branches:u                #   23.466 M/sec                    (62.50%)
+         2,936,131      branch-misses:u           #    0.29% of all branches          (62.50%)
+     4,061,690,145      L1-dcache-loads:u         #   93.689 M/sec                    (62.51%)
+     1,070,964,677      L1-dcache-load-misses:u   #   26.37% of all L1-dcache hits    (50.04%)
+     2,142,523,524      LLC-loads:u               #   49.420 M/sec                    (50.03%)
+        68,961,089      LLC-load-misses:u         #    3.22% of all LL-cache hits     (50.01%)
+
+      43.365121140 seconds time elapsed
+
+
+ Performance counter stats for './execs/mat_mult/mat_mult_c_thumb_O2':
+
+      43063.336742      task-clock:u (msec)       #    1.000 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+             2,981      page-faults:u             #    0.069 K/sec                  
+    38,357,298,990      cycles:u                  #    0.891 GHz                      (62.50%)
+     7,156,773,208      instructions:u            #    0.19  insn per cycle           (62.51%)
+     1,017,072,548      branches:u                #   23.618 M/sec                    (62.52%)
+         2,923,376      branch-misses:u           #    0.29% of all branches          (62.53%)
+     4,059,636,541      L1-dcache-loads:u         #   94.271 M/sec                    (62.53%)
+     1,073,009,357      L1-dcache-load-misses:u   #   26.43% of all L1-dcache hits    (50.00%)
+     2,147,169,783      LLC-loads:u               #   49.861 M/sec                    (49.98%)
+        69,204,850      LLC-load-misses:u         #    3.22% of all LL-cache hits     (50.00%)
+
+      43.072093113 seconds time elapsed
+
+
+ Performance counter stats for './execs/mat_mult/mat_mult_c_thumb_O2':
+
+      43492.237528      task-clock:u (msec)       #    1.000 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+             2,983      page-faults:u             #    0.069 K/sec                  
+    38,460,311,408      cycles:u                  #    0.884 GHz                      (62.48%)
+     7,159,287,370      instructions:u            #    0.19  insn per cycle           (62.48%)
+     1,017,066,065      branches:u                #   23.385 M/sec                    (62.48%)
+         3,019,776      branch-misses:u           #    0.30% of all branches          (62.53%)
+     4,058,577,314      L1-dcache-loads:u         #   93.317 M/sec                    (62.54%)
+     1,077,043,289      L1-dcache-load-misses:u   #   26.54% of all L1-dcache hits    (50.03%)
+     2,154,779,663      LLC-loads:u               #   49.544 M/sec                    (50.01%)
+        69,444,566      LLC-load-misses:u         #    3.22% of all LL-cache hits     (49.99%)
+
+      43.499442931 seconds time elapsed
+
+
+ Performance counter stats for './execs/mat_mult/mat_mult_c_thumb_O2':
+
+      43495.441847      task-clock:u (msec)       #    1.000 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+             2,983      page-faults:u             #    0.069 K/sec                  
+    38,463,703,075      cycles:u                  #    0.884 GHz                      (62.49%)
+     7,155,465,643      instructions:u            #    0.19  insn per cycle           (62.49%)
+     1,017,287,650      branches:u                #   23.388 M/sec                    (62.49%)
+         2,944,976      branch-misses:u           #    0.29% of all branches          (62.49%)
+     4,058,344,015      L1-dcache-loads:u         #   93.305 M/sec                    (62.54%)
+     1,074,720,506      L1-dcache-load-misses:u   #   26.48% of all L1-dcache hits    (50.03%)
+     2,150,429,696      LLC-loads:u               #   49.440 M/sec                    (50.02%)
+        69,739,707      LLC-load-misses:u         #    3.24% of all LL-cache hits     (50.00%)
+
+      43.509421518 seconds time elapsed
+
+
+ Performance counter stats for './execs/mat_mult/mat_mult_c_thumb_O2':
+
+      43318.134041      task-clock:u (msec)       #    0.999 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+             2,981      page-faults:u             #    0.069 K/sec                  
+    38,368,231,351      cycles:u                  #    0.886 GHz                      (62.48%)
+     7,165,766,902      instructions:u            #    0.19  insn per cycle           (62.45%)
+     1,017,575,395      branches:u                #   23.491 M/sec                    (62.46%)
+         3,040,107      branch-misses:u           #    0.30% of all branches          (62.47%)
+     4,056,639,152      L1-dcache-loads:u         #   93.648 M/sec                    (62.57%)
+     1,072,845,480      L1-dcache-load-misses:u   #   26.45% of all L1-dcache hits    (50.06%)
+     2,146,468,268      LLC-loads:u               #   49.551 M/sec                    (50.04%)
+        69,118,975      LLC-load-misses:u         #    3.22% of all LL-cache hits     (50.00%)
+
+      43.367632791 seconds time elapsed
+
+
+ Performance counter stats for './execs/mat_mult/mat_mult_c_thumb_O2':
+
+      43372.223205      task-clock:u (msec)       #    1.000 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+             2,981      page-faults:u             #    0.069 K/sec                  
+    38,343,574,631      cycles:u                  #    0.884 GHz                      (62.49%)
+     7,157,702,788      instructions:u            #    0.19  insn per cycle           (62.50%)
+     1,017,115,397      branches:u                #   23.451 M/sec                    (62.50%)
+         2,971,811      branch-misses:u           #    0.29% of all branches          (62.52%)
+     4,060,168,389      L1-dcache-loads:u         #   93.612 M/sec                    (62.52%)
+     1,072,600,201      L1-dcache-load-misses:u   #   26.42% of all L1-dcache hits    (50.00%)
+     2,144,409,202      LLC-loads:u               #   49.442 M/sec                    (50.03%)
+        69,040,737      LLC-load-misses:u         #    3.22% of all LL-cache hits     (50.00%)
+
+      43.385058325 seconds time elapsed
+
+
+ Performance counter stats for './execs/mat_mult/mat_mult_c_thumb_O2':
+
+      43541.129343      task-clock:u (msec)       #    1.000 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+             2,982      page-faults:u             #    0.068 K/sec                  
+    38,452,639,214      cycles:u                  #    0.883 GHz                      (62.50%)
+     7,156,326,658      instructions:u            #    0.19  insn per cycle           (62.51%)
+     1,016,979,421      branches:u                #   23.357 M/sec                    (62.52%)
+         2,946,106      branch-misses:u           #    0.29% of all branches          (62.53%)
+     4,058,449,973      L1-dcache-loads:u         #   93.210 M/sec                    (62.53%)
+     1,073,830,599      L1-dcache-load-misses:u   #   26.46% of all L1-dcache hits    (50.00%)
+     2,147,150,219      LLC-loads:u               #   49.313 M/sec                    (49.97%)
+        70,260,651      LLC-load-misses:u         #    3.27% of all LL-cache hits     (50.00%)
+
+      43.553236069 seconds time elapsed
+
+
+ Performance counter stats for './execs/mat_mult/mat_mult_c_thumb_O2':
+
+      43445.066791      task-clock:u (msec)       #    1.000 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+             2,983      page-faults:u             #    0.069 K/sec                  
+    38,420,175,871      cycles:u                  #    0.884 GHz                      (62.50%)
+     7,160,070,459      instructions:u            #    0.19  insn per cycle           (62.51%)
+     1,017,269,714      branches:u                #   23.415 M/sec                    (62.51%)
+         3,025,368      branch-misses:u           #    0.30% of all branches          (62.51%)
+     4,059,783,197      L1-dcache-loads:u         #   93.446 M/sec                    (62.51%)
+     1,075,676,203      L1-dcache-load-misses:u   #   26.50% of all L1-dcache hits    (50.03%)
+     2,152,609,598      LLC-loads:u               #   49.548 M/sec                    (50.02%)
+        69,182,374      LLC-load-misses:u         #    3.21% of all LL-cache hits     (50.01%)
+
+      43.451563999 seconds time elapsed
+
+
+ Performance counter stats for './execs/mat_mult/mat_mult_c_thumb_O2':
+
+      43406.372587      task-clock:u (msec)       #    1.000 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+             2,982      page-faults:u             #    0.069 K/sec                  
+    38,365,991,493      cycles:u                  #    0.884 GHz                      (62.48%)
+     7,160,981,320      instructions:u            #    0.19  insn per cycle           (62.48%)
+     1,017,133,444      branches:u                #   23.433 M/sec                    (62.51%)
+         2,942,654      branch-misses:u           #    0.29% of all branches          (62.52%)
+     4,060,299,558      L1-dcache-loads:u         #   93.542 M/sec                    (62.53%)
+     1,072,806,347      L1-dcache-load-misses:u   #   26.42% of all L1-dcache hits    (50.04%)
+     2,146,517,594      LLC-loads:u               #   49.452 M/sec                    (50.02%)
+        69,306,344      LLC-load-misses:u         #    3.23% of all LL-cache hits     (49.99%)
+
+      43.422423394 seconds time elapsed
+
+
+ Performance counter stats for './execs/mat_mult/mat_mult_c_thumb_O2':
+
+      43139.480025      task-clock:u (msec)       #    1.000 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+             2,981      page-faults:u             #    0.069 K/sec                  
+    38,432,450,846      cycles:u                  #    0.891 GHz                      (62.51%)
+     7,155,951,911      instructions:u            #    0.19  insn per cycle           (62.52%)
+     1,016,709,535      branches:u                #   23.568 M/sec                    (62.52%)
+         2,920,731      branch-misses:u           #    0.29% of all branches          (62.52%)
+     4,059,633,918      L1-dcache-loads:u         #   94.105 M/sec                    (62.52%)
+     1,072,726,026      L1-dcache-load-misses:u   #   26.42% of all L1-dcache hits    (49.99%)
+     2,145,220,604      LLC-loads:u               #   49.728 M/sec                    (50.01%)
+        69,785,053      LLC-load-misses:u         #    3.25% of all LL-cache hits     (50.00%)
+
+      43.147800061 seconds time elapsed
+
+
+ Performance counter stats for './execs/mat_mult/mat_mult_c_thumb_O2':
+
+      43130.094085      task-clock:u (msec)       #    1.000 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+             2,982      page-faults:u             #    0.069 K/sec                  
+    38,428,300,825      cycles:u                  #    0.891 GHz                      (62.50%)
+     7,159,865,606      instructions:u            #    0.19  insn per cycle           (62.51%)
+     1,017,301,078      branches:u                #   23.587 M/sec                    (62.51%)
+         2,921,002      branch-misses:u           #    0.29% of all branches          (62.51%)
+     4,059,370,207      L1-dcache-loads:u         #   94.119 M/sec                    (62.51%)
+     1,072,017,361      L1-dcache-load-misses:u   #   26.41% of all L1-dcache hits    (49.99%)
+     2,143,443,752      LLC-loads:u               #   49.697 M/sec                    (50.02%)
+        69,744,246      LLC-load-misses:u         #    3.25% of all LL-cache hits     (50.01%)
+
+      43.136029862 seconds time elapsed
+
+
+ Performance counter stats for './execs/mat_mult/mat_mult_c_thumb_O2':
+
+      43392.076073      task-clock:u (msec)       #    1.000 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+             2,982      page-faults:u             #    0.069 K/sec                  
+    38,331,527,169      cycles:u                  #    0.883 GHz                      (62.51%)
+     7,157,474,195      instructions:u            #    0.19  insn per cycle           (62.52%)
+     1,017,008,345      branches:u                #   23.438 M/sec                    (62.53%)
+         2,939,945      branch-misses:u           #    0.29% of all branches          (62.53%)
+     4,058,043,527      L1-dcache-loads:u         #   93.520 M/sec                    (62.53%)
+     1,073,138,791      L1-dcache-load-misses:u   #   26.44% of all L1-dcache hits    (50.00%)
+     2,146,959,067      LLC-loads:u               #   49.478 M/sec                    (49.97%)
+        69,064,639      LLC-load-misses:u         #    3.22% of all LL-cache hits     (50.00%)
+
+      43.403443563 seconds time elapsed
+
+
+ Performance counter stats for './execs/mat_mult/mat_mult_c_thumb_O2':
+
+      43547.753670      task-clock:u (msec)       #    1.000 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+             2,982      page-faults:u             #    0.068 K/sec                  
+    38,493,117,899      cycles:u                  #    0.884 GHz                      (62.51%)
+     7,155,678,364      instructions:u            #    0.19  insn per cycle           (62.51%)
+     1,016,898,717      branches:u                #   23.351 M/sec                    (62.52%)
+         3,024,034      branch-misses:u           #    0.30% of all branches          (62.53%)
+     4,059,970,146      L1-dcache-loads:u         #   93.230 M/sec                    (62.53%)
+     1,076,161,049      L1-dcache-load-misses:u   #   26.51% of all L1-dcache hits    (50.00%)
+     2,153,195,920      LLC-loads:u               #   49.444 M/sec                    (49.98%)
+        69,718,783      LLC-load-misses:u         #    3.24% of all LL-cache hits     (50.00%)
+
+      43.554246694 seconds time elapsed
+
+
+ Performance counter stats for './execs/mat_mult/mat_mult_c_thumb_O2':
+
+      43120.678475      task-clock:u (msec)       #    0.999 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+             2,983      page-faults:u             #    0.069 K/sec                  
+    38,386,605,932      cycles:u                  #    0.890 GHz                      (62.50%)
+     7,159,437,761      instructions:u            #    0.19  insn per cycle           (62.53%)
+     1,017,148,802      branches:u                #   23.588 M/sec                    (62.52%)
+         2,904,055      branch-misses:u           #    0.29% of all branches          (62.52%)
+     4,059,109,727      L1-dcache-loads:u         #   94.134 M/sec                    (62.50%)
+     1,072,389,888      L1-dcache-load-misses:u   #   26.42% of all L1-dcache hits    (50.01%)
+     2,145,756,636      LLC-loads:u               #   49.762 M/sec                    (49.98%)
+        69,403,594      LLC-load-misses:u         #    3.23% of all LL-cache hits     (50.01%)
+
+      43.161684210 seconds time elapsed
+
+
+ Performance counter stats for './execs/mat_mult/mat_mult_c_thumb_O2':
+
+      43139.729764      task-clock:u (msec)       #    1.000 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+             2,983      page-faults:u             #    0.069 K/sec                  
+    38,437,231,827      cycles:u                  #    0.891 GHz                      (62.51%)
+     7,156,435,940      instructions:u            #    0.19  insn per cycle           (62.51%)
+     1,016,586,628      branches:u                #   23.565 M/sec                    (62.52%)
+         2,929,972      branch-misses:u           #    0.29% of all branches          (62.52%)
+     4,059,370,217      L1-dcache-loads:u         #   94.098 M/sec                    (62.52%)
+     1,072,941,158      L1-dcache-load-misses:u   #   26.43% of all L1-dcache hits    (49.98%)
+     2,146,123,443      LLC-loads:u               #   49.748 M/sec                    (50.01%)
+        69,677,691      LLC-load-misses:u         #    3.25% of all LL-cache hits     (50.00%)
+
+      43.145593028 seconds time elapsed
+
+
+ Performance counter stats for './execs/mat_mult/mat_mult_c_thumb_O2':
+
+      43358.975393      task-clock:u (msec)       #    1.000 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+             2,981      page-faults:u             #    0.069 K/sec                  
+    38,325,312,658      cycles:u                  #    0.884 GHz                      (62.51%)
+     7,158,197,528      instructions:u            #    0.19  insn per cycle           (62.51%)
+     1,017,070,472      branches:u                #   23.457 M/sec                    (62.51%)
+         2,935,994      branch-misses:u           #    0.29% of all branches          (62.51%)
+     4,059,054,853      L1-dcache-loads:u         #   93.615 M/sec                    (62.51%)
+     1,073,494,000      L1-dcache-load-misses:u   #   26.45% of all L1-dcache hits    (49.99%)
+     2,147,152,806      LLC-loads:u               #   49.520 M/sec                    (50.02%)
+        68,858,316      LLC-load-misses:u         #    3.21% of all LL-cache hits     (50.01%)
+
+      43.377586849 seconds time elapsed
+
+
+ Performance counter stats for './execs/mat_mult/mat_mult_c_thumb_O2':
+
+      43027.483468      task-clock:u (msec)       #    1.000 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+             2,983      page-faults:u             #    0.069 K/sec                  
+    38,334,887,157      cycles:u                  #    0.891 GHz                      (62.50%)
+     7,160,520,776      instructions:u            #    0.19  insn per cycle           (62.49%)
+     1,016,948,750      branches:u                #   23.635 M/sec                    (62.49%)
+         2,924,983      branch-misses:u           #    0.29% of all branches          (62.49%)
+     4,056,773,226      L1-dcache-loads:u         #   94.283 M/sec                    (62.54%)
+     1,072,717,525      L1-dcache-load-misses:u   #   26.44% of all L1-dcache hits    (50.03%)
+     2,147,077,856      LLC-loads:u               #   49.900 M/sec                    (50.02%)
+        69,092,683      LLC-load-misses:u         #    3.22% of all LL-cache hits     (50.00%)
+
+      43.035017706 seconds time elapsed
+
+
+ Performance counter stats for './execs/mat_mult/mat_mult_c_thumb_O2':
+
+      43428.201897      task-clock:u (msec)       #    1.000 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+             2,983      page-faults:u             #    0.069 K/sec                  
+    38,392,924,466      cycles:u                  #    0.884 GHz                      (62.48%)
+     7,159,214,101      instructions:u            #    0.19  insn per cycle           (62.50%)
+     1,016,642,149      branches:u                #   23.410 M/sec                    (62.50%)
+         2,951,911      branch-misses:u           #    0.29% of all branches          (62.50%)
+     4,058,078,024      L1-dcache-loads:u         #   93.443 M/sec                    (62.56%)
+     1,072,936,125      L1-dcache-load-misses:u   #   26.44% of all L1-dcache hits    (50.01%)
+     2,147,321,477      LLC-loads:u               #   49.445 M/sec                    (50.00%)
+        69,449,844      LLC-load-misses:u         #    3.23% of all LL-cache hits     (49.98%)
+
+      43.443418289 seconds time elapsed
+
+
+ Performance counter stats for './execs/mat_mult/mat_mult_c_thumb_O2':
+
+      43417.869039      task-clock:u (msec)       #    1.000 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+             2,982      page-faults:u             #    0.069 K/sec                  
+    38,395,520,698      cycles:u                  #    0.884 GHz                      (62.48%)
+     7,160,287,882      instructions:u            #    0.19  insn per cycle           (62.49%)
+     1,017,219,399      branches:u                #   23.429 M/sec                    (62.49%)
+         3,020,559      branch-misses:u           #    0.30% of all branches          (62.49%)
+     4,057,901,629      L1-dcache-loads:u         #   93.462 M/sec                    (62.54%)
+     1,074,934,847      L1-dcache-load-misses:u   #   26.49% of all L1-dcache hits    (50.03%)
+     2,150,247,012      LLC-loads:u               #   49.524 M/sec                    (50.02%)
+        69,095,459      LLC-load-misses:u         #    3.21% of all LL-cache hits     (50.00%)
+
+      43.424156421 seconds time elapsed
+
+
+ Performance counter stats for './execs/mat_mult/mat_mult_c_thumb_O2':
+
+      43487.859768      task-clock:u (msec)       #    1.000 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+             2,983      page-faults:u             #    0.069 K/sec                  
+    38,449,601,329      cycles:u                  #    0.884 GHz                      (62.48%)
+     7,157,294,300      instructions:u            #    0.19  insn per cycle           (62.48%)
+     1,016,136,445      branches:u                #   23.366 M/sec                    (62.52%)
+         2,950,490      branch-misses:u           #    0.29% of all branches          (62.53%)
+     4,059,458,456      L1-dcache-loads:u         #   93.347 M/sec                    (62.54%)
+     1,073,546,498      L1-dcache-load-misses:u   #   26.45% of all L1-dcache hits    (50.03%)
+     2,148,236,706      LLC-loads:u               #   49.399 M/sec                    (50.01%)
+        69,731,515      LLC-load-misses:u         #    3.25% of all LL-cache hits     (49.98%)
+
+      43.500167244 seconds time elapsed
+
+
+ Performance counter stats for './execs/mat_mult/mat_mult_c_thumb_O2':
+
+      43129.550181      task-clock:u (msec)       #    1.000 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+             2,981      page-faults:u             #    0.069 K/sec                  
+    38,403,066,093      cycles:u                  #    0.890 GHz                      (62.51%)
+     7,160,438,951      instructions:u            #    0.19  insn per cycle           (62.51%)
+     1,016,967,712      branches:u                #   23.579 M/sec                    (62.51%)
+         2,900,964      branch-misses:u           #    0.29% of all branches          (62.51%)
+     4,057,774,365      L1-dcache-loads:u         #   94.083 M/sec                    (62.51%)
+     1,074,395,316      L1-dcache-load-misses:u   #   26.48% of all L1-dcache hits    (50.03%)
+     2,149,396,356      LLC-loads:u               #   49.836 M/sec                    (50.01%)
+        69,446,387      LLC-load-misses:u         #    3.23% of all LL-cache hits     (50.00%)
+
+      43.136569184 seconds time elapsed
+
+
+ Performance counter stats for './execs/mat_mult/mat_mult_c_thumb_O2':
+
+      43350.575704      task-clock:u (msec)       #    0.999 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+             2,983      page-faults:u             #    0.069 K/sec                  
+    38,394,087,654      cycles:u                  #    0.886 GHz                      (62.52%)
+     7,159,339,876      instructions:u            #    0.19  insn per cycle           (62.50%)
+     1,017,135,370      branches:u                #   23.463 M/sec                    (62.52%)
+         2,954,777      branch-misses:u           #    0.29% of all branches          (62.51%)
+     4,059,370,888      L1-dcache-loads:u         #   93.641 M/sec                    (62.52%)
+     1,075,352,785      L1-dcache-load-misses:u   #   26.49% of all L1-dcache hits    (50.00%)
+     2,149,574,857      LLC-loads:u               #   49.586 M/sec                    (50.02%)
+        69,121,169      LLC-load-misses:u         #    3.22% of all LL-cache hits     (50.02%)
+
+      43.403452343 seconds time elapsed
+
+
+ Performance counter stats for './execs/mat_mult/mat_mult_c_thumb_O2':
+
+      43410.453205      task-clock:u (msec)       #    1.000 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+             2,982      page-faults:u             #    0.069 K/sec                  
+    38,384,047,852      cycles:u                  #    0.884 GHz                      (62.48%)
+     7,159,669,118      instructions:u            #    0.19  insn per cycle           (62.48%)
+     1,017,262,162      branches:u                #   23.434 M/sec                    (62.48%)
+         3,021,175      branch-misses:u           #    0.30% of all branches          (62.53%)
+     4,058,610,979      L1-dcache-loads:u         #   93.494 M/sec                    (62.54%)
+     1,074,184,963      L1-dcache-load-misses:u   #   26.47% of all L1-dcache hits    (50.03%)
+     2,148,975,813      LLC-loads:u               #   49.504 M/sec                    (50.01%)
+        69,122,428      LLC-load-misses:u         #    3.22% of all LL-cache hits     (49.99%)
+
+      43.417573971 seconds time elapsed
+
+
+ Performance counter stats for './execs/mat_mult/mat_mult_c_thumb_O2':
+
+      43105.894671      task-clock:u (msec)       #    0.999 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+             2,982      page-faults:u             #    0.069 K/sec                  
+    38,399,513,648      cycles:u                  #    0.891 GHz                      (62.49%)
+     7,158,931,815      instructions:u            #    0.19  insn per cycle           (62.48%)
+     1,016,979,101      branches:u                #   23.593 M/sec                    (62.50%)
+         2,890,353      branch-misses:u           #    0.28% of all branches          (62.51%)
+     4,057,652,627      L1-dcache-loads:u         #   94.132 M/sec                    (62.55%)
+     1,074,626,913      L1-dcache-load-misses:u   #   26.48% of all L1-dcache hits    (50.02%)
+     2,149,806,885      LLC-loads:u               #   49.873 M/sec                    (50.01%)
+        69,271,715      LLC-load-misses:u         #    3.22% of all LL-cache hits     (49.99%)
+
+      43.136992706 seconds time elapsed
+
+
+ Performance counter stats for './execs/mat_mult/mat_mult_c_thumb_O2':
+
+      43060.291695      task-clock:u (msec)       #    1.000 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+             2,982      page-faults:u             #    0.069 K/sec                  
+    38,356,634,629      cycles:u                  #    0.891 GHz                      (62.50%)
+     7,158,039,292      instructions:u            #    0.19  insn per cycle           (62.51%)
+     1,017,233,231      branches:u                #   23.623 M/sec                    (62.52%)
+         2,921,471      branch-misses:u           #    0.29% of all branches          (62.52%)
+     4,059,566,432      L1-dcache-loads:u         #   94.276 M/sec                    (62.52%)
+     1,070,503,092      L1-dcache-load-misses:u   #   26.37% of all L1-dcache hits    (50.00%)
+     2,142,397,625      LLC-loads:u               #   49.753 M/sec                    (49.97%)
+        69,445,344      LLC-load-misses:u         #    3.24% of all LL-cache hits     (50.01%)
+
+      43.067863935 seconds time elapsed
+
+
+ Performance counter stats for './execs/mat_mult/mat_mult_c_thumb_O2':
+
+      43490.256009      task-clock:u (msec)       #    0.999 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+             2,981      page-faults:u             #    0.069 K/sec                  
+    38,417,644,444      cycles:u                  #    0.883 GHz                      (62.47%)
+     7,159,220,794      instructions:u            #    0.19  insn per cycle           (62.47%)
+     1,017,179,657      branches:u                #   23.389 M/sec                    (62.48%)
+         2,933,285      branch-misses:u           #    0.29% of all branches          (62.54%)
+     4,057,064,527      L1-dcache-loads:u         #   93.287 M/sec                    (62.55%)
+     1,073,842,488      L1-dcache-load-misses:u   #   26.47% of all L1-dcache hits    (50.04%)
+     2,146,913,507      LLC-loads:u               #   49.365 M/sec                    (50.01%)
+        69,622,242      LLC-load-misses:u         #    3.24% of all LL-cache hits     (49.98%)
+
+      43.512748792 seconds time elapsed
+
+
+ Performance counter stats for './execs/mat_mult/mat_mult_c_thumb_O2':
+
+      43386.951652      task-clock:u (msec)       #    1.000 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+             2,981      page-faults:u             #    0.069 K/sec                  
+    38,331,806,701      cycles:u                  #    0.883 GHz                      (62.51%)
+     7,154,316,767      instructions:u            #    0.19  insn per cycle           (62.52%)
+     1,015,689,148      branches:u                #   23.410 M/sec                    (62.52%)
+         2,947,505      branch-misses:u           #    0.29% of all branches          (62.53%)
+     4,059,821,291      L1-dcache-loads:u         #   93.572 M/sec                    (62.53%)
+     1,073,641,799      L1-dcache-load-misses:u   #   26.45% of all L1-dcache hits    (50.00%)
+     2,148,450,264      LLC-loads:u               #   49.518 M/sec                    (49.98%)
+        69,107,701      LLC-load-misses:u         #    3.22% of all LL-cache hits     (50.00%)
+
+      43.399986252 seconds time elapsed
+
+
+ Performance counter stats for './execs/mat_mult/mat_mult_c_thumb_O2':
+
+      43411.382107      task-clock:u (msec)       #    1.000 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+             2,983      page-faults:u             #    0.069 K/sec                  
+    38,388,975,999      cycles:u                  #    0.884 GHz                      (62.46%)
+     7,152,983,247      instructions:u            #    0.19  insn per cycle           (62.51%)
+     1,016,384,952      branches:u                #   23.413 M/sec                    (62.53%)
+         3,026,510      branch-misses:u           #    0.30% of all branches          (62.54%)
+     4,059,832,481      L1-dcache-loads:u         #   93.520 M/sec                    (62.55%)
+     1,075,871,925      L1-dcache-load-misses:u   #   26.50% of all L1-dcache hits    (50.02%)
+     2,152,618,518      LLC-loads:u               #   49.587 M/sec                    (49.98%)
+        69,078,682      LLC-load-misses:u         #    3.21% of all LL-cache hits     (49.96%)
+
+      43.419238278 seconds time elapsed
+
+
+ Performance counter stats for './execs/mat_mult/mat_mult_c_thumb_O2':
+
+      43410.790550      task-clock:u (msec)       #    1.000 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+             2,983      page-faults:u             #    0.069 K/sec                  
+    38,359,527,960      cycles:u                  #    0.884 GHz                      (62.49%)
+     7,160,266,905      instructions:u            #    0.19  insn per cycle           (62.49%)
+     1,016,619,886      branches:u                #   23.419 M/sec                    (62.48%)
+         2,950,114      branch-misses:u           #    0.29% of all branches          (62.53%)
+     4,055,065,321      L1-dcache-loads:u         #   93.411 M/sec                    (62.54%)
+     1,073,112,488      L1-dcache-load-misses:u   #   26.46% of all L1-dcache hits    (50.02%)
+     2,148,851,706      LLC-loads:u               #   49.500 M/sec                    (50.01%)
+        69,345,206      LLC-load-misses:u         #    3.23% of all LL-cache hits     (49.99%)
+
+      43.425697148 seconds time elapsed
+
+
+ Performance counter stats for './execs/mat_mult/mat_mult_c_thumb_O2':
+
+      43094.031327      task-clock:u (msec)       #    1.000 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+             2,983      page-faults:u             #    0.069 K/sec                  
+    38,401,353,321      cycles:u                  #    0.891 GHz                      (62.48%)
+     7,158,390,664      instructions:u            #    0.19  insn per cycle           (62.48%)
+     1,017,048,114      branches:u                #   23.601 M/sec                    (62.48%)
+         2,925,453      branch-misses:u           #    0.29% of all branches          (62.53%)
+     4,059,426,261      L1-dcache-loads:u         #   94.199 M/sec                    (62.54%)
+     1,072,825,243      L1-dcache-load-misses:u   #   26.43% of all L1-dcache hits    (50.03%)
+     2,145,967,995      LLC-loads:u               #   49.797 M/sec                    (50.01%)
+        69,568,619      LLC-load-misses:u         #    3.24% of all LL-cache hits     (49.99%)
+
+      43.099782880 seconds time elapsed
+
+
+ Performance counter stats for './execs/mat_mult/mat_mult_c_thumb_O2':
+
+      43578.915241      task-clock:u (msec)       #    1.000 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+             2,981      page-faults:u             #    0.068 K/sec                  
+    38,523,253,744      cycles:u                  #    0.884 GHz                      (62.49%)
+     7,160,715,236      instructions:u            #    0.19  insn per cycle           (62.49%)
+     1,017,044,515      branches:u                #   23.338 M/sec                    (62.49%)
+         2,988,252      branch-misses:u           #    0.29% of all branches          (62.51%)
+     4,057,371,400      L1-dcache-loads:u         #   93.104 M/sec                    (62.52%)
+     1,083,901,424      L1-dcache-load-misses:u   #   26.71% of all L1-dcache hits    (50.02%)
+     2,168,977,318      LLC-loads:u               #   49.771 M/sec                    (50.02%)
+        69,400,943      LLC-load-misses:u         #    3.20% of all LL-cache hits     (50.00%)
+
+      43.588832060 seconds time elapsed
+
+
+ Performance counter stats for './execs/mat_mult/mat_mult_c_thumb_O2':
+
+      43429.341488      task-clock:u (msec)       #    1.000 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+             2,981      page-faults:u             #    0.069 K/sec                  
+    38,411,941,411      cycles:u                  #    0.884 GHz                      (62.50%)
+     7,159,441,248      instructions:u            #    0.19  insn per cycle           (62.48%)
+     1,016,851,128      branches:u                #   23.414 M/sec                    (62.47%)
+         3,022,469      branch-misses:u           #    0.30% of all branches          (62.47%)
+     4,057,738,122      L1-dcache-loads:u         #   93.433 M/sec                    (62.55%)
+     1,074,308,054      L1-dcache-load-misses:u   #   26.48% of all L1-dcache hits    (50.04%)
+     2,149,800,539      LLC-loads:u               #   49.501 M/sec                    (50.03%)
+        69,269,745      LLC-load-misses:u         #    3.22% of all LL-cache hits     (50.01%)
+
+      43.440010521 seconds time elapsed
+
+
+ Performance counter stats for './execs/mat_mult/mat_mult_c_thumb_O2':
+
+      43426.029141      task-clock:u (msec)       #    1.000 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+             2,983      page-faults:u             #    0.069 K/sec                  
+    38,398,927,452      cycles:u                  #    0.884 GHz                      (62.49%)
+     7,159,388,551      instructions:u            #    0.19  insn per cycle           (62.49%)
+     1,017,304,096      branches:u                #   23.426 M/sec                    (62.49%)
+         3,024,723      branch-misses:u           #    0.30% of all branches          (62.50%)
+     4,057,510,676      L1-dcache-loads:u         #   93.435 M/sec                    (62.54%)
+     1,075,929,936      L1-dcache-load-misses:u   #   26.52% of all L1-dcache hits    (50.03%)
+     2,153,108,454      LLC-loads:u               #   49.581 M/sec                    (50.02%)
+        69,105,315      LLC-load-misses:u         #    3.21% of all LL-cache hits     (50.01%)
+
+      43.432252310 seconds time elapsed
+
+
+ Performance counter stats for './execs/mat_mult/mat_mult_c_thumb_O2':
+
+      43407.183053      task-clock:u (msec)       #    1.000 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+             2,982      page-faults:u             #    0.069 K/sec                  
+    38,379,713,930      cycles:u                  #    0.884 GHz                      (62.47%)
+     7,157,597,404      instructions:u            #    0.19  insn per cycle           (62.47%)
+     1,016,194,442      branches:u                #   23.411 M/sec                    (62.52%)
+         3,025,574      branch-misses:u           #    0.30% of all branches          (62.53%)
+     4,059,632,507      L1-dcache-loads:u         #   93.524 M/sec                    (62.54%)
+     1,075,840,946      L1-dcache-load-misses:u   #   26.50% of all L1-dcache hits    (50.02%)
+     2,152,821,384      LLC-loads:u               #   49.596 M/sec                    (50.00%)
+        68,924,787      LLC-load-misses:u         #    3.20% of all LL-cache hits     (49.97%)
+
+      43.414181016 seconds time elapsed
+
+
+ Performance counter stats for './execs/mat_mult/mat_mult_c_thumb_O2':
+
+      43058.664711      task-clock:u (msec)       #    0.999 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+             2,981      page-faults:u             #    0.069 K/sec                  
+    38,347,742,592      cycles:u                  #    0.891 GHz                      (62.51%)
+     7,161,164,565      instructions:u            #    0.19  insn per cycle           (62.53%)
+     1,017,537,669      branches:u                #   23.631 M/sec                    (62.53%)
+         2,915,999      branch-misses:u           #    0.29% of all branches          (62.53%)
+     4,059,888,147      L1-dcache-loads:u         #   94.287 M/sec                    (62.49%)
+     1,072,842,624      L1-dcache-load-misses:u   #   26.43% of all L1-dcache hits    (49.96%)
+     2,145,330,616      LLC-loads:u               #   49.823 M/sec                    (50.02%)
+        69,182,723      LLC-load-misses:u         #    3.22% of all LL-cache hits     (50.02%)
+
+      43.099613910 seconds time elapsed
+
+
+ Performance counter stats for './execs/mat_mult/mat_mult_c_thumb_O2':
+
+      43442.697577      task-clock:u (msec)       #    1.000 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+             2,983      page-faults:u             #    0.069 K/sec                  
+    38,417,397,471      cycles:u                  #    0.884 GHz                      (62.51%)
+     7,161,034,748      instructions:u            #    0.19  insn per cycle           (62.49%)
+     1,017,162,214      branches:u                #   23.414 M/sec                    (62.49%)
+         3,006,201      branch-misses:u           #    0.30% of all branches          (62.50%)
+     4,058,854,102      L1-dcache-loads:u         #   93.430 M/sec                    (62.52%)
+     1,075,522,726      L1-dcache-load-misses:u   #   26.50% of all L1-dcache hits    (50.04%)
+     2,152,240,249      LLC-loads:u               #   49.542 M/sec                    (50.02%)
+        69,211,769      LLC-load-misses:u         #    3.22% of all LL-cache hits     (50.01%)
+
+      43.455527201 seconds time elapsed
+
+
+ Performance counter stats for './execs/mat_mult/mat_mult_c_thumb_O2':
+
+      43408.372165      task-clock:u (msec)       #    1.000 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+             2,982      page-faults:u             #    0.069 K/sec                  
+    38,363,767,720      cycles:u                  #    0.884 GHz                      (62.49%)
+     7,159,375,463      instructions:u            #    0.19  insn per cycle           (62.48%)
+     1,016,813,953      branches:u                #   23.424 M/sec                    (62.48%)
+         2,949,114      branch-misses:u           #    0.29% of all branches          (62.53%)
+     4,056,559,979      L1-dcache-loads:u         #   93.451 M/sec                    (62.54%)
+     1,073,145,767      L1-dcache-load-misses:u   #   26.45% of all L1-dcache hits    (50.02%)
+     2,148,708,331      LLC-loads:u               #   49.500 M/sec                    (50.01%)
+        69,375,379      LLC-load-misses:u         #    3.23% of all LL-cache hits     (49.98%)
+
+      43.420336218 seconds time elapsed
+
+
+ Performance counter stats for './execs/mat_mult/mat_mult_c_thumb_O2':
+
+      43019.085237      task-clock:u (msec)       #    0.999 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+             2,981      page-faults:u             #    0.069 K/sec                  
+    38,328,573,394      cycles:u                  #    0.891 GHz                      (62.50%)
+     7,156,880,307      instructions:u            #    0.19  insn per cycle           (62.51%)
+     1,016,887,562      branches:u                #   23.638 M/sec                    (62.49%)
+         2,924,085      branch-misses:u           #    0.29% of all branches          (62.50%)
+     4,060,427,771      L1-dcache-loads:u         #   94.387 M/sec                    (62.51%)
+     1,071,588,658      L1-dcache-load-misses:u   #   26.39% of all L1-dcache hits    (50.04%)
+     2,144,730,521      LLC-loads:u               #   49.855 M/sec                    (50.03%)
+        69,048,720      LLC-load-misses:u         #    3.22% of all LL-cache hits     (50.01%)
+
+      43.062938105 seconds time elapsed
+
+
+ Performance counter stats for './execs/mat_mult/mat_mult_c_thumb_O2':
+
+      43433.755659      task-clock:u (msec)       #    1.000 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+             2,981      page-faults:u             #    0.069 K/sec                  
+    38,389,611,756      cycles:u                  #    0.884 GHz                      (62.49%)
+     7,158,569,095      instructions:u            #    0.19  insn per cycle           (62.48%)
+     1,017,087,674      branches:u                #   23.417 M/sec                    (62.50%)
+         2,965,989      branch-misses:u           #    0.29% of all branches          (62.50%)
+     4,056,791,031      L1-dcache-loads:u         #   93.402 M/sec                    (62.55%)
+     1,074,061,878      L1-dcache-load-misses:u   #   26.48% of all L1-dcache hits    (50.04%)
+     2,148,768,408      LLC-loads:u               #   49.472 M/sec                    (50.01%)
+        69,448,181      LLC-load-misses:u         #    3.23% of all LL-cache hits     (49.99%)
+
+      43.445322794 seconds time elapsed
+
+
+ Performance counter stats for './execs/mat_mult/mat_mult_c_thumb_O2':
+
+      43402.366174      task-clock:u (msec)       #    1.000 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+             2,981      page-faults:u             #    0.069 K/sec                  
+    38,364,703,563      cycles:u                  #    0.884 GHz                      (62.47%)
+     7,157,110,534      instructions:u            #    0.19  insn per cycle           (62.47%)
+     1,015,285,965      branches:u                #   23.392 M/sec                    (62.52%)
+         2,948,218      branch-misses:u           #    0.29% of all branches          (62.53%)
+     4,061,198,285      L1-dcache-loads:u         #   93.571 M/sec                    (62.55%)
+     1,073,917,160      L1-dcache-load-misses:u   #   26.44% of all L1-dcache hits    (50.02%)
+     2,149,317,208      LLC-loads:u               #   49.521 M/sec                    (49.99%)
+        69,371,096      LLC-load-misses:u         #    3.23% of all LL-cache hits     (49.97%)
+
+      43.414443643 seconds time elapsed
+
+
+ Performance counter stats for './execs/mat_mult/mat_mult_c_thumb_O2':
+
+      43409.173831      task-clock:u (msec)       #    1.000 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+             2,983      page-faults:u             #    0.069 K/sec                  
+    38,383,102,267      cycles:u                  #    0.884 GHz                      (62.48%)
+     7,160,110,390      instructions:u            #    0.19  insn per cycle           (62.48%)
+     1,016,473,316      branches:u                #   23.416 M/sec                    (62.52%)
+         3,021,690      branch-misses:u           #    0.30% of all branches          (62.53%)
+     4,058,712,134      L1-dcache-loads:u         #   93.499 M/sec                    (62.54%)
+     1,075,724,638      L1-dcache-load-misses:u   #   26.50% of all L1-dcache hits    (50.03%)
+     2,152,494,116      LLC-loads:u               #   49.586 M/sec                    (50.01%)
+        69,085,727      LLC-load-misses:u         #    3.21% of all LL-cache hits     (49.99%)
+
+      43.416317298 seconds time elapsed
+
+
+ Performance counter stats for './execs/mat_mult/mat_mult_c_thumb_O2':
+
+      43470.093357      task-clock:u (msec)       #    1.000 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+             2,983      page-faults:u             #    0.069 K/sec                  
+    38,442,018,439      cycles:u                  #    0.884 GHz                      (62.46%)
+     7,157,078,833      instructions:u            #    0.19  insn per cycle           (62.51%)
+     1,016,928,458      branches:u                #   23.394 M/sec                    (62.52%)
+         3,023,470      branch-misses:u           #    0.30% of all branches          (62.53%)
+     4,059,203,601      L1-dcache-loads:u         #   93.379 M/sec                    (62.53%)
+     1,074,842,166      L1-dcache-load-misses:u   #   26.48% of all L1-dcache hits    (50.01%)
+     2,150,588,931      LLC-loads:u               #   49.473 M/sec                    (49.99%)
+        69,479,474      LLC-load-misses:u         #    3.23% of all LL-cache hits     (49.96%)
+
+      43.477119534 seconds time elapsed
+
+
+ Performance counter stats for './execs/mat_mult/mat_mult_c_thumb_O2':
+
+      43320.974674      task-clock:u (msec)       #    0.999 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+             2,982      page-faults:u             #    0.069 K/sec                  
+    38,314,235,896      cycles:u                  #    0.884 GHz                      (62.44%)
+     7,154,193,590      instructions:u            #    0.19  insn per cycle           (62.48%)
+     1,016,948,259      branches:u                #   23.475 M/sec                    (62.53%)
+         2,952,132      branch-misses:u           #    0.29% of all branches          (62.55%)
+     4,060,038,410      L1-dcache-loads:u         #   93.720 M/sec                    (62.56%)
+     1,074,088,272      L1-dcache-load-misses:u   #   26.46% of all L1-dcache hits    (50.04%)
+     2,147,615,786      LLC-loads:u               #   49.575 M/sec                    (49.97%)
+        68,906,655      LLC-load-misses:u         #    3.21% of all LL-cache hits     (49.94%)
+
+      43.348358670 seconds time elapsed
+
+
+ Performance counter stats for './execs/mat_mult/mat_mult_c_thumb_O2':
+
+      43385.764873      task-clock:u (msec)       #    1.000 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+             2,982      page-faults:u             #    0.069 K/sec                  
+    38,359,491,896      cycles:u                  #    0.884 GHz                      (62.52%)
+     7,156,992,655      instructions:u            #    0.19  insn per cycle           (62.52%)
+     1,017,000,352      branches:u                #   23.441 M/sec                    (62.53%)
+         3,106,021      branch-misses:u           #    0.31% of all branches          (62.52%)
+     4,059,752,793      L1-dcache-loads:u         #   93.573 M/sec                    (62.51%)
+     1,076,641,303      L1-dcache-load-misses:u   #   26.52% of all L1-dcache hits    (49.97%)
+     2,153,145,970      LLC-loads:u               #   49.628 M/sec                    (50.00%)
+        69,045,799      LLC-load-misses:u         #    3.21% of all LL-cache hits     (50.01%)
+
+      43.393548416 seconds time elapsed
+
+
+ Performance counter stats for './execs/mat_mult/mat_mult_c_thumb_O2':
+
+      43465.906384      task-clock:u (msec)       #    1.000 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+             2,983      page-faults:u             #    0.069 K/sec                  
+    38,436,333,497      cycles:u                  #    0.884 GHz                      (62.46%)
+     7,157,251,127      instructions:u            #    0.19  insn per cycle           (62.51%)
+     1,017,279,670      branches:u                #   23.404 M/sec                    (62.52%)
+         3,022,637      branch-misses:u           #    0.30% of all branches          (62.53%)
+     4,059,811,767      L1-dcache-loads:u         #   93.402 M/sec                    (62.53%)
+     1,076,878,801      L1-dcache-load-misses:u   #   26.53% of all L1-dcache hits    (50.01%)
+     2,154,164,096      LLC-loads:u               #   49.560 M/sec                    (49.99%)
+        69,405,241      LLC-load-misses:u         #    3.22% of all LL-cache hits     (49.96%)
+
+      43.473052792 seconds time elapsed
+
+
+ Performance counter stats for './execs/mat_mult/mat_mult_c_thumb_O2':
+
+      43530.585970      task-clock:u (msec)       #    1.000 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+             2,982      page-faults:u             #    0.069 K/sec                  
+    38,490,982,232      cycles:u                  #    0.884 GHz                      (62.51%)
+     7,158,024,720      instructions:u            #    0.19  insn per cycle           (62.51%)
+     1,016,704,715      branches:u                #   23.356 M/sec                    (62.52%)
+         3,020,312      branch-misses:u           #    0.30% of all branches          (62.51%)
+     4,059,539,342      L1-dcache-loads:u         #   93.257 M/sec                    (62.51%)
+     1,075,203,522      L1-dcache-load-misses:u   #   26.49% of all L1-dcache hits    (50.02%)
+     2,151,536,195      LLC-loads:u               #   49.426 M/sec                    (50.02%)
+        69,904,241      LLC-load-misses:u         #    3.25% of all LL-cache hits     (50.00%)
+
+      43.537305290 seconds time elapsed
+
