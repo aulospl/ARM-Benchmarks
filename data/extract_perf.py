@@ -12,16 +12,19 @@ class result:
         c = 0
         print(filename)
         with open('perf_data/'+filename) as f:
-            while(c < 200):
+            while(c < 50):
                 values = {'task_clock':0, 'context_switches':0, 'cpu_migrations':0, 'page_faults':0, 'cycles':0, 'instructions':0, 'branch':0, 'branch_miss':0, 'L1_load':0, 'L1_miss':0, 'LLC_load':0, 'LLC_load_miss':0, 'time':0}
                  
                 #print("iteration: "+str(c))
+                #f.readline()
                 f.readline()
                 f.readline()
-                if c != 0:
-                    f.readline()
-                    f.readline()
+                f.readline()
+                #if c != 0:
+                #    f.readline()
+                #    f.readline()
                 values['task_clock'] = float(f.readline().split()[0])
+                #print(values['task_clock'])
                 values['context_switches'] = float(f.readline().split()[0].replace(',',''))
                 values['cpu_migrations'] = float(f.readline().split()[0].replace(',',''))
                 values['page_faults'] = float(f.readline().split()[0].replace(',',''))
@@ -37,8 +40,8 @@ class result:
                 values['time'] = float(f.readline().split()[0])
                 self.tests.append(values)
                 c += 1
+                f.readline()
             print("finished "+filename)
-
 
 files = os.listdir("perf_data/")
 all_data = [result(f) for f in files]
@@ -58,7 +61,7 @@ def sep_by_optimization(all_data):
 
 
 stuff = sep_by_compilation(all_data)
-
+quit()
 """
 def sep_by_optimization(all_results):
     none = [r for r in all_results if (r.optimization == 'none')]
@@ -71,14 +74,14 @@ def sep_by_size(sep_results):
     size_100 = [[r for r in results if r.size == 100] for results in sep_results]
     size_1000 = [[r for r in results if r.size == 1000] for results in sep_results]
     return [size_10, size_100, size_1000]
-
+"""
 def plot_bar_time(results, plot_name,plot_unroll):
     data = [ [r.time for r in res] for res in results]
     vals = [sum(d) for d in data]
     stddev = [np.std(d) for d in data]
     mean = sum(vals)/len(vals)
     for i in range(len(vals)):
-        print('optimization:',optimizations[str(i)],'error:',stddev[i],sep='\t')
+        print('optimization:',vals[i].optimizations[str(i)],'error:',stddev[i],sep='\t')
     plt.bar([i for i in range(len(vals))],vals, yerr=stddev)
     plt.title(plot_name.replace('_', ' '))
     plt.ylabel('tempo de execucao')
@@ -196,4 +199,3 @@ for i in [0,1,2]:
 #optimization comparison
 for i in [0,1,2]:
     plot_all(final_usage[i], 'size_10'+'0'*i, False)
-"""
