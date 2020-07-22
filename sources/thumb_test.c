@@ -10,11 +10,7 @@
  *		'e': end test set (end program)
  */
 
-/* extern assembly functions to bench */
-//extern void mat_mult_arm_long(int **a, int **b, int **c); 
 extern void mat_mult_thumb(int **a, int **b, int **c);
-//extern void mem_access_arm(int **cache);
-//extern void mem_access_thumb(int **cache);
 
 int **allocate_matrix();
 void free_matrix(int **m);
@@ -28,65 +24,39 @@ int main() {
 	// Matrices initialization
 
 	int **a, **b, **c;
-	 a = allocate_matrix();
-	 b = allocate_matrix();
-	 c = allocate_matrix();
+	a = allocate_matrix();
+	b = allocate_matrix();
+	c = allocate_matrix();
 	
-
-	// Memory array initialization
-	//int **array = NULL;
-	//array = alloc_array();
-
-	/* Run benchmarks */
-	
-	//usb_synch('n');
-	//printf("ARM MATRIX MULTIPLICATION\n");
-	//init_matrices(a, b, c);
-	//usb_synch(argv[1], 'b'); //begin
-	//mat_mult_thumb(a, b, c);
-	
-	//usb_synch(argv[1], 's'); //stop
-	printf("ARM  MATRIX MULTIPLICATION\n");
+	printf("INIT\n");
 	init_matrices(NULL, NULL, c);
+
+	printf("Mat Mult Thumb\n");
 	mat_mult_thumb(a, b, c);
+	
+	printf("CHECKING\n");
 	check_result(a, b, c);
-	printf("DONE\n");
-
-	//printf("THUMB MATRIX MULTIPLICATION\n");
-	//usb_synch(argv[1], 'b'); //begin
-	//mat_mult_thumb(a, b, c);
-	//usb_synch(argv[1], 's'); //stop
-	//printf("DONE"\n);
-	//usb_synch('e');
-	
-	// Free matrix memory
-	//free_matrix(a);
-	//free_matrix(b);
-	//free_matrix(c);
-	
-	/* Memory access (cacheless) */	
-	//printf("ARM MEMORY ACCESS\n");
-	//init_array(array);
-	//mem_access_thumb(array);
-	
-//	printf("THUMB MEMORY ACCESS\n");
-	//init_array(array);
-	//mem_access_thumb(array);
-
-	//free(array);
+	printf("FREE A\n");
 	free_matrix(a);
+	printf("FREE B\n");
 	free_matrix(b);
+	printf("FREE C\n");
 	free_matrix(c);
+
 	return 0;
 }
 
 /* Return pointer to 1000x1000 matrix */
 int **allocate_matrix(){
-	int **m;
+/*	int **m;
 	m = (int**)malloc(1000*sizeof(int*));
 	for(int i=0;i<1000;i++){
 		m[i] = (int*)malloc(1000*sizeof(int));
 	}
+	*/
+	int **m;
+	m = (int**) malloc(1000 * sizeof(int*));
+	m[0] = (int*) malloc(1000*1000*sizeof(int));
 	return m;
 }
 
