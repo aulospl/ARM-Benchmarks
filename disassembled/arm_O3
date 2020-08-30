@@ -1,0 +1,35 @@
+00010820 <mat_mult_c>:
+   10820:	e92d4ff0 	push	{r4, r5, r6, r7, r8, r9, sl, fp, lr}
+   10824:	e2823ef9 	add	r3, r2, #3984	; 0xf90
+   10828:	e24dd00c 	sub	sp, sp, #12
+   1082c:	e2400004 	sub	r0, r0, #4
+   10830:	e2411004 	sub	r1, r1, #4
+   10834:	e242b004 	sub	fp, r2, #4
+   10838:	e283300c 	add	r3, r3, #12
+   1083c:	e58d3004 	str	r3, [sp, #4]
+   10840:	e5b08004 	ldr	r8, [r0, #4]!
+   10844:	e5bb9004 	ldr	r9, [fp, #4]!
+   10848:	e2887ef9 	add	r7, r8, #3984	; 0xf90
+   1084c:	e287700c 	add	r7, r7, #12
+   10850:	e2488004 	sub	r8, r8, #4
+   10854:	e289aefa 	add	sl, r9, #4000	; 0xfa0
+   10858:	e1a05009 	mov	r5, r9
+   1085c:	e5952000 	ldr	r2, [r5]
+   10860:	e0456009 	sub	r6, r5, r9
+   10864:	e1a03008 	mov	r3, r8
+   10868:	e1a0c001 	mov	ip, r1
+   1086c:	e5bce004 	ldr	lr, [ip, #4]!
+   10870:	e5b34004 	ldr	r4, [r3, #4]!
+   10874:	e79ee006 	ldr	lr, [lr, r6]
+   10878:	e1570003 	cmp	r7, r3
+   1087c:	e0222e94 	mla	r2, r4, lr, r2
+   10880:	e5852000 	str	r2, [r5]
+   10884:	1afffff8 	bne	1086c <mat_mult_c+0x4c>
+   10888:	e2855004 	add	r5, r5, #4
+   1088c:	e15a0005 	cmp	sl, r5
+   10890:	1afffff1 	bne	1085c <mat_mult_c+0x3c>
+   10894:	e59d3004 	ldr	r3, [sp, #4]
+   10898:	e153000b 	cmp	r3, fp
+   1089c:	1affffe7 	bne	10840 <mat_mult_c+0x20>
+   108a0:	e28dd00c 	add	sp, sp, #12
+   108a4:	e8bd8ff0 	pop	{r4, r5, r6, r7, r8, r9, sl, fp, pc}

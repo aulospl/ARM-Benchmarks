@@ -1,0 +1,33 @@
+000107f4 <mat_mult_c>:
+   107f4:	e92d 4ff0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
+   107f8:	3804      	subs	r0, #4
+   107fa:	b083      	sub	sp, #12
+   107fc:	f1a1 0804 	sub.w	r8, r1, #4
+   10800:	f1a2 0b04 	sub.w	fp, r2, #4
+   10804:	f602 739c 	addw	r3, r2, #3996	; 0xf9c
+   10808:	9301      	str	r3, [sp, #4]
+   1080a:	f85b cf04 	ldr.w	ip, [fp, #4]!
+   1080e:	f850 3f04 	ldr.w	r3, [r0, #4]!
+   10812:	f50c 6a7a 	add.w	sl, ip, #4000	; 0xfa0
+   10816:	f1a3 0904 	sub.w	r9, r3, #4
+   1081a:	f603 7e9c 	addw	lr, r3, #3996	; 0xf9c
+   1081e:	4666      	mov	r6, ip
+   10820:	6832      	ldr	r2, [r6, #0]
+   10822:	eba6 070c 	sub.w	r7, r6, ip
+   10826:	464b      	mov	r3, r9
+   10828:	4641      	mov	r1, r8
+   1082a:	f851 4f04 	ldr.w	r4, [r1, #4]!
+   1082e:	f853 5f04 	ldr.w	r5, [r3, #4]!
+   10832:	59e4      	ldr	r4, [r4, r7]
+   10834:	459e      	cmp	lr, r3
+   10836:	fb05 2204 	mla	r2, r5, r4, r2
+   1083a:	6032      	str	r2, [r6, #0]
+   1083c:	d1f5      	bne.n	1082a <mat_mult_c+0x36>
+   1083e:	3604      	adds	r6, #4
+   10840:	45b2      	cmp	sl, r6
+   10842:	d1ed      	bne.n	10820 <mat_mult_c+0x2c>
+   10844:	9b01      	ldr	r3, [sp, #4]
+   10846:	455b      	cmp	r3, fp
+   10848:	d1df      	bne.n	1080a <mat_mult_c+0x16>
+   1084a:	b003      	add	sp, #12
+   1084c:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}

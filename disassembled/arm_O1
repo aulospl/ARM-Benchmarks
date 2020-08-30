@@ -1,0 +1,27 @@
+000107e0 <mat_mult_c>:
+   107e0:	e92d43f0 	push	{r4, r5, r6, r7, r8, r9, lr}
+   107e4:	e2829efa 	add	r9, r2, #4000	; 0xfa0
+   107e8:	e2818efa 	add	r8, r1, #4000	; 0xfa0
+   107ec:	ea000013 	b	10840 <mat_mult_c+0x60>
+   107f0:	e1a07001 	mov	r7, r1
+   107f4:	e1a03001 	mov	r3, r1
+   107f8:	e5924000 	ldr	r4, [r2]
+   107fc:	e043c007 	sub	ip, r3, r7
+   10800:	e5905000 	ldr	r5, [r0]
+   10804:	e795c00c 	ldr	ip, [r5, ip]
+   10808:	e4935004 	ldr	r5, [r3], #4
+   1080c:	e795600e 	ldr	r6, [r5, lr]
+   10810:	e794500e 	ldr	r5, [r4, lr]
+   10814:	e02c5c96 	mla	ip, r6, ip, r5
+   10818:	e784c00e 	str	ip, [r4, lr]
+   1081c:	e1580003 	cmp	r8, r3
+   10820:	1afffff4 	bne	107f8 <mat_mult_c+0x18>
+   10824:	e28ee004 	add	lr, lr, #4
+   10828:	e35e0efa 	cmp	lr, #4000	; 0xfa0
+   1082c:	1affffef 	bne	107f0 <mat_mult_c+0x10>
+   10830:	e2822004 	add	r2, r2, #4
+   10834:	e2800004 	add	r0, r0, #4
+   10838:	e1520009 	cmp	r2, r9
+   1083c:	08bd83f0 	popeq	{r4, r5, r6, r7, r8, r9, pc}
+   10840:	e3a0e000 	mov	lr, #0
+   10844:	eaffffe9 	b	107f0 <mat_mult_c+0x10>
